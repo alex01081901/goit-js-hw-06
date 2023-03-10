@@ -12,8 +12,7 @@ withIdEl.forEach(value => {
    const itemEl = value.querySelector('ul');
 
    console.log(`Categories:${firstWithIdEl.textContent}`);
- console.log(`Elements:${itemEl.children.length}`);
-
+   console.log(`Elements:${itemEl.children.length}`);
 
 });
 
