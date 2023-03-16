@@ -4,11 +4,12 @@ const body = document.body;
 buttonEl.addEventListener('click', onBtnColorChange);
 
 function onBtnColorChange() {
-  body.style.backgroundColor = getRandomHexColor();
-  colorEl.textContent = getRandomHexColor(); 
+  const color = getRandomHexColor()
+  body.style.backgroundColor = color;
+  colorEl.textContent = color; 
 }
 
-function getRandomHexColor() {
+function  getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
     .padStart(6, 0)}`;

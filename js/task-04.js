@@ -7,12 +7,17 @@ let counterValue = 0;
 increment.addEventListener("click", btnIncrementHandler);
 decrement.addEventListener("click", btnDecrementHandler);
 
+increment.addEventListener("+", btnIncrementHandler);
+decrement.addEventListener("+", btnDecrementHandler);
+
 function btnIncrementHandler(event) {
-    console.log((counterValue += 1));
+    counterValue += 1;
+    showValue.textContent = counterValue;
+
 }
 
 function btnDecrementHandler(event) {
-    console.log((counterValue -= 1));
+    counterValue -= 1;
     showValue.textContent = counterValue;
 
 }
