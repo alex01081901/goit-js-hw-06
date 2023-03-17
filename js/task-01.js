@@ -1,18 +1,16 @@
-const withIdEl = document.querySelectorAll('#Categories');
-console.log(withIdEl);
+ const withIdEl = document.querySelectorAll('#Categories');
+ console.log(withIdEl);
 const itemEl = document.querySelectorAll('.item');
-console.log(itemEl);
-
 
 console.log(`Number of categories: ${itemEl.length}`);
 
-withIdEl.forEach(value => {
+ withIdEl.forEach(value => {
   
-    const firstWithIdEl = value.querySelector('ul'); 
-    const itemEl = value.querySelector('h2');
+   //  const firstWithIdEl = value.querySelector('ul'); 
+   //     const itemEl = value.querySelector('h2');
 
-   console.log(`Categories:${firstWithIdEl.firstElementChild.textContent}`);
-   console.log(`Elements:${firstWithIdEl.lastElementChild.length}`);
+   console.log(`Categories:${ value.firstElementChild.textContent}`);
+   console.log(`Elements:${ value.lastElementChild.length}`);
 
 });
 
