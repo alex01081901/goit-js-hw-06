@@ -8,8 +8,8 @@ console.log(`Number of categories: ${itemEl.length}`);
 
 withIdEl.forEach(value => {
   
-   // const firstWithIdEl = value.querySelector('h2'); 
-   // const itemEl = value.querySelector('ul');
+    const firstWithIdEl = value.querySelector('ul'); 
+    const itemEl = value.querySelector('h2');
 
    console.log(`Categories:${firstWithIdEl.firstElementChild.textContent}`);
    console.log(`Elements:${firstWithIdEl.lastElementChild.length}`);
