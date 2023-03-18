@@ -6,7 +6,7 @@ console.log(`Number of categories: ${itemEl.length}`);
 itemEl.forEach(value => {
 
    console.log(`Categories:${ value.firstElementChild.textContent}`);
-   console.log(`Elements:${ value.children.length}`);
+   console.log(`Elements:${ value.lastElementChild.children.length}`);
 
 });
 
