@@ -12,6 +12,6 @@ function handleSubmit(event) {
 
     } else {
         console.log(`Login: ${email.value}, Password: ${password.value}`)
-        event, currentTarget.reset();
+        event.currentTarget.reset();
     }
 }
